@@ -39,28 +39,28 @@ $ forge fmt
 $ forge snapshot
 ```
 
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
 ### Help
 
 ```shell
 $ forge --help
 $ anvil --help
 $ cast --help
+```
+
+### Deploy
+
+```shell
+$ forge script script/deploy.s.sol --rpc-url sepolia --broadcast
+```
+
+### Add alumni
+
+```shell
+$ forge script script/AddAlumni.s.sol --rpc-url sepolia --broadcast
+```
+
+### Add grades
+
+```shell
+$ forge script script/GradePints.s.sol --rpc-url sepolia --broadcast
 ```

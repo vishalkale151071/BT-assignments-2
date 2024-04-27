@@ -3,7 +3,6 @@ pragma solidity ^0.8.19;
 
 import {ERC721} from "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
-
 struct Alumni {
     uint256 passingYear;
     string name;
@@ -49,7 +48,7 @@ contract AlumniAssociation is ERC721 {
         alumniPoints[tokenID] += points[assignment];
     }
 
-    function pointsOf(uint256 tokenID) public view returns (uint256){
+    function pointsOf(uint256 tokenID) public view returns (uint256) {
         return alumniPoints[tokenID];
     }
 }

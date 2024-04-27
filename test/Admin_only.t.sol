@@ -23,7 +23,7 @@ contract Admin_only is Test {
 
     function test_addGradeFail() public {
         Alumni memory data = Alumni({passingYear: 2021, name: "Alice", location: "USA", catoegory: "Gold"});
-        
+
         alumniAssociation.mint(alumni, data);
 
         address not_admin = makeAddr("not_admin");
